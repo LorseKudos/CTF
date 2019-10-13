@@ -1,0 +1,25 @@
+Foremost version 1.5.7 by Jesse Kornblum, Kris Kendall, and Nick Mikus
+Audit File
+
+Foremost started at Tue Sep 24 18:47:58 2019
+Invocation: foremost marigold.png 
+Output directory: /Users/admin/code/CTF/problem/maidakeCTF/Foren/Another image/output
+Configuration file: /usr/local/etc/foremost.conf
+------------------------------------------------------------------
+File: marigold.png
+Start: Tue Sep 24 18:47:58 2019
+Length: Unknown
+ 
+Num	 Name (bs=512)	       Size	 File Offset	 Comment 
+
+0:	00001775.jpg 	      34 KB 	     908893 	 
+1:	00000000.png 	     887 KB 	          0 	  (1000 x 750)
+Finish: Tue Sep 24 18:47:58 2019
+
+2 FILES EXTRACTED
+	
+jpg:= 1
+png:= 1
+------------------------------------------------------------------
+
+Foremost finished at Tue Sep 24 18:47:58 2019
