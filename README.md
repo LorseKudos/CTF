@@ -3,4 +3,4 @@ CTFの問題のソースコードやsolverを保管しているリポジトリ�
 
 Writeupはブログにて公開しています．
 
-[La Vie en Lorse 敗者色の人生](https://lorse.hatenablog.com/)
+ブログ: [La Vie en Lorse 敗者色の人生](https://lorse.hatenablog.com/)
