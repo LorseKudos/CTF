@@ -1,6 +1,5 @@
-# from secret import flag
+from secret import flag
 
-flag = "hoge"
 def ROTL(value, bits, size=32):
     return ((value % (1 << (size - bits))) << bits) | (value >> (size - bits))
 
@@ -44,5 +43,5 @@ try:
 except:
     print('Never gonna let you down')
 
-# fedb02317654a8154576c8f50123ba10bfe54da84832cb1e894c5d830ec3c520
-# 0124fdce89ab57eaba89370afedc45efbfe54da84832cb1e894c5d830ec3c520
+# input1: fedb02317654a8154576c8f50123ba10bfe54da84832cb1e894c5d830ec3c520
+# input2: 0124fdce89ab57eaba89370afedc45efbfe54da84832cb1e894c5d830ec3c520
