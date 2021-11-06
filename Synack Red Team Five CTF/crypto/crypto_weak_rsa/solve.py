@@ -1,4 +1,5 @@
 from Crypto.PublicKey import RSA
+from Crypto.Util.number import bytes_to_long, long_to_bytes
 import gmpy2
 import binascii
 
@@ -55,13 +56,11 @@ if __name__ == '__main__':
     e = pubkey.e
     n = pubkey.n
 
+    with open("flag.enc", "rb") as f:
+        c = bytes_to_long(f.read())
 
-
-    print("e :", e)
-    print("n :", n)
     d = wieners_attack(e, n)
     print("found d: %d" % d)
     m = pow(c, d, n)
-    print(m)
-    flag = binascii.unhexlify(format(m, 'x')).decode()
+    flag = long_to_bytes(m)
     print(flag)
