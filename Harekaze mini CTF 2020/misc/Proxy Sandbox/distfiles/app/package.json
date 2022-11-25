@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "fastify": "^3.9.2",
+    "fastify": "^3.29.4",
     "fastify-static": "^3.3.0",
     "point-of-view": "^4.7.0",
     "pug": "^3.0.0"
