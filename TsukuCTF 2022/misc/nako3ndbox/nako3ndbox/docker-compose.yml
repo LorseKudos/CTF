@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  nako3ndbox:
+    build:
+      context: .
+    working_dir: /home/ctf/nako3ndbox
+    restart: always
+    ports:
+      - "31418:31418"
