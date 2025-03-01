@@ -1,0 +1,307 @@
+    0: \x8c SHORT_BINUNICODE 'builtins' Push a Python Unicode string object.
+   10: \x8c SHORT_BINUNICODE 'getattr'  Push a Python Unicode string object.
+   19: \x93 STACK_GLOBAL                Push a global object (module.attr) on the stack.
+   20: p    PUT        0                Store the stack top into the memo.  The stack is not popped.
+   23: 2    DUP                         Push the top stack item onto the stack again, duplicating it.
+   24: \x8c SHORT_BINUNICODE 'builtins' Push a Python Unicode string object.
+   34: \x8c SHORT_BINUNICODE 'input'    Push a Python Unicode string object.
+   41: \x93 STACK_GLOBAL                Push a global object (module.attr) on the stack.
+   42: \x8c SHORT_BINUNICODE 'FLAG> '   Push a Python Unicode string object.
+   50: \x85 TUPLE1                      Build a one-tuple out of the topmost item on the stack.
+   51: R    REDUCE                      Push an object built from a callable and an argument tuple.
+   52: \x8c SHORT_BINUNICODE 'encode'   Push a Python Unicode string object.
+   60: \x86 TUPLE2                      Build a two-tuple out of the top two items on the stack.
+   61: R    REDUCE                      Push an object built from a callable and an argument tuple.
+   62: )    EMPTY_TUPLE                 Push an empty tuple.
+   63: R    REDUCE                      Push an object built from a callable and an argument tuple.
+   64: p    PUT        1                Store the stack top into the memo.  The stack is not popped.
+   67: 0    POP                         Discard the top stack item, shrinking the stack by one item.
+   68: g    GET        0                Read an object from the memo and push it on the stack.
+   71: \x8c SHORT_BINUNICODE 'builtins' Push a Python Unicode string object.
+   81: \x8c SHORT_BINUNICODE 'dict'     Push a Python Unicode string object.
+   87: \x93 STACK_GLOBAL                Push a global object (module.attr) on the stack.
+   88: \x8c SHORT_BINUNICODE 'get'      Push a Python Unicode string object.
+   93: \x86 TUPLE2                      Build a two-tuple out of the top two items on the stack.
+   94: R    REDUCE                      Push an object built from a callable and an argument tuple.
+   95: \x8c SHORT_BINUNICODE 'builtins' Push a Python Unicode string object.
+  105: \x8c SHORT_BINUNICODE 'globals'  Push a Python Unicode string object.
+  114: \x93 STACK_GLOBAL                Push a global object (module.attr) on the stack.
+  115: )    EMPTY_TUPLE                 Push an empty tuple.
+  116: R    REDUCE                      Push an object built from a callable and an argument tuple.
+  117: \x8c SHORT_BINUNICODE 'f'        Push a Python Unicode string object.
+  120: \x86 TUPLE2                      Build a two-tuple out of the top two items on the stack.
+  121: R    REDUCE                      Push an object built from a callable and an argument tuple.
+  122: \x8c SHORT_BINUNICODE 'seek'     Push a Python Unicode string object.
+  128: \x86 TUPLE2                      Build a two-tuple out of the top two items on the stack.
+  129: R    REDUCE                      Push an object built from a callable and an argument tuple.
+  130: p    PUT        2                Store the stack top into the memo.  The stack is not popped.
+  133: g    GET        0                Read an object from the memo and push it on the stack.
+  136: \x8c SHORT_BINUNICODE 'builtins' Push a Python Unicode string object.
+  146: \x8c SHORT_BINUNICODE 'int'      Push a Python Unicode string object.
+  151: \x93 STACK_GLOBAL                Push a global object (module.attr) on the stack.
+  152: \x8c SHORT_BINUNICODE '__add__'  Push a Python Unicode string object.
+  161: \x86 TUPLE2                      Build a two-tuple out of the top two items on the stack.
+  162: R    REDUCE                      Push an object built from a callable and an argument tuple.
+  163: p    PUT        3                Store the stack top into the memo.  The stack is not popped.
+  166: 0    POP                         Discard the top stack item, shrinking the stack by one item.
+  167: g    GET        0                Read an object from the memo and push it on the stack.
+  170: \x8c SHORT_BINUNICODE 'builtins' Push a Python Unicode string object.
+  180: \x8c SHORT_BINUNICODE 'int'      Push a Python Unicode string object.
+  185: \x93 STACK_GLOBAL                Push a global object (module.attr) on the stack.
+  186: \x8c SHORT_BINUNICODE '__mul__'  Push a Python Unicode string object.
+  195: \x86 TUPLE2                      Build a two-tuple out of the top two items on the stack.
+  196: R    REDUCE                      Push an object built from a callable and an argument tuple.
+  197: p    PUT        4                Store the stack top into the memo.  The stack is not popped.
+  200: 0    POP                         Discard the top stack item, shrinking the stack by one item.
+  201: g    GET        0                Read an object from the memo and push it on the stack.
+  204: \x8c SHORT_BINUNICODE 'builtins' Push a Python Unicode string object.
+  214: \x8c SHORT_BINUNICODE 'int'      Push a Python Unicode string object.
+  219: \x93 STACK_GLOBAL                Push a global object (module.attr) on the stack.
+  220: \x8c SHORT_BINUNICODE '__eq__'   Push a Python Unicode string object.
+  228: \x86 TUPLE2                      Build a two-tuple out of the top two items on the stack.
+  229: R    REDUCE                      Push an object built from a callable and an argument tuple.
+  230: p    PUT        5                Store the stack top into the memo.  The stack is not popped.
+  233: 0    POP                         Discard the top stack item, shrinking the stack by one item.
+  234: g    GET        3                Read an object from the memo and push it on the stack.
+  237: g    GET        5                Read an object from the memo and push it on the stack.
+  240: \x8c SHORT_BINUNICODE 'builtins' Push a Python Unicode string object.
+  250: \x8c SHORT_BINUNICODE 'len'      Push a Python Unicode string object.
+  255: \x93 STACK_GLOBAL                Push a global object (module.attr) on the stack.
+  256: g    GET        1                Read an object from the memo and push it on the stack.
+  259: \x85 TUPLE1                      Build a one-tuple out of the topmost item on the stack.
+  260: R    REDUCE                      Push an object built from a callable and an argument tuple.
+  261: M    BININT2    64               Push a two-byte unsigned integer.
+  264: \x86 TUPLE2                      Build a two-tuple out of the top two items on the stack.
+  265: R    REDUCE                      Push an object built from a callable and an argument tuple.
+  266: M    BININT2    261              Push a two-byte unsigned integer.
+  269: \x86 TUPLE2                      Build a two-tuple out of the top two items on the stack.
+  270: R    REDUCE                      Push an object built from a callable and an argument tuple.
+  271: \x85 TUPLE1                      Build a one-tuple out of the topmost item on the stack.
+  272: R    REDUCE                      Push an object built from a callable and an argument tuple.
+  273: 0    POP                         Discard the top stack item, shrinking the stack by one item.
+  274: g    GET        0                Read an object from the memo and push it on the stack.
+  277: g    GET        1                Read an object from the memo and push it on the stack.
+  280: \x8c SHORT_BINUNICODE '__getitem__' Push a Python Unicode string object.
+  293: \x86 TUPLE2                         Build a two-tuple out of the top two items on the stack.
+  294: R    REDUCE                         Push an object built from a callable and an argument tuple.
+  295: p    PUT        6                   Store the stack top into the memo.  The stack is not popped.
+  298: 0    POP                            Discard the top stack item, shrinking the stack by one item.
+  299: M    BININT2    0                   Push a two-byte unsigned integer.
+  302: p    PUT        7                   Store the stack top into the memo.  The stack is not popped.
+  305: 0    POP                            Discard the top stack item, shrinking the stack by one item.
+  306: g    GET        2                   Read an object from the memo and push it on the stack.
+  309: g    GET        3                   Read an object from the memo and push it on the stack.
+  312: g    GET        0                   Read an object from the memo and push it on the stack.
+  315: g    GET        6                   Read an object from the memo and push it on the stack.
+  318: g    GET        7                   Read an object from the memo and push it on the stack.
+  321: \x85 TUPLE1                         Build a one-tuple out of the topmost item on the stack.
+  322: R    REDUCE                         Push an object built from a callable and an argument tuple.
+  323: \x8c SHORT_BINUNICODE '__le__'      Push a Python Unicode string object.
+  331: \x86 TUPLE2                         Build a two-tuple out of the top two items on the stack.
+  332: R    REDUCE                         Push an object built from a callable and an argument tuple.
+  333: M    BININT2    127                 Push a two-byte unsigned integer.
+  336: \x85 TUPLE1                         Build a one-tuple out of the topmost item on the stack.
+  337: R    REDUCE                         Push an object built from a callable and an argument tuple.
+  338: M    BININT2    330                 Push a two-byte unsigned integer.
+  341: \x86 TUPLE2                         Build a two-tuple out of the top two items on the stack.
+  342: R    REDUCE                         Push an object built from a callable and an argument tuple.
+  343: \x85 TUPLE1                         Build a one-tuple out of the topmost item on the stack.
+  344: R    REDUCE                         Push an object built from a callable and an argument tuple.
+  345: 0    POP                            Discard the top stack item, shrinking the stack by one item.
+  346: g    GET        2                   Read an object from the memo and push it on the stack.
+  349: g    GET        3                   Read an object from the memo and push it on the stack.
+  352: g    GET        4                   Read an object from the memo and push it on the stack.
+  355: g    GET        5                   Read an object from the memo and push it on the stack.
+  358: g    GET        3                   Read an object from the memo and push it on the stack.
+  361: g    GET        7                   Read an object from the memo and push it on the stack.
+  364: M    BININT2    1                   Push a two-byte unsigned integer.
+  367: \x86 TUPLE2                         Build a two-tuple out of the top two items on the stack.
+  368: R    REDUCE                         Push an object built from a callable and an argument tuple.
+  369: p    PUT        8                   Store the stack top into the memo.  The stack is not popped.
+  372: M    BININT2    64                  Push a two-byte unsigned integer.
+  375: \x86 TUPLE2                         Build a two-tuple out of the top two items on the stack.
+  376: R    REDUCE                         Push an object built from a callable and an argument tuple.
+  377: M    BININT2    85                  Push a two-byte unsigned integer.
+  380: \x86 TUPLE2                         Build a two-tuple out of the top two items on the stack.
+  381: R    REDUCE                         Push an object built from a callable and an argument tuple.
+  382: M    BININT2    290                 Push a two-byte unsigned integer.
+  385: \x86 TUPLE2                         Build a two-tuple out of the top two items on the stack.
+  386: R    REDUCE                         Push an object built from a callable and an argument tuple.
+  387: \x85 TUPLE1                         Build a one-tuple out of the topmost item on the stack.
+  388: R    REDUCE                         Push an object built from a callable and an argument tuple.
+  389: 0    POP                            Discard the top stack item, shrinking the stack by one item.
+  390: g    GET        0                   Read an object from the memo and push it on the stack.
+  393: g    GET        0                   Read an object from the memo and push it on the stack.
+  396: ]    EMPTY_LIST                     Push an empty list.
+  397: p    PUT        9                   Store the stack top into the memo.  The stack is not popped.
+  400: \x8c SHORT_BINUNICODE 'append'      Push a Python Unicode string object.
+  408: \x86 TUPLE2                         Build a two-tuple out of the top two items on the stack.
+  409: R    REDUCE                         Push an object built from a callable and an argument tuple.
+  410: p    PUT        10                  Store the stack top into the memo.  The stack is not popped.
+  414: 0    POP                            Discard the top stack item, shrinking the stack by one item.
+  415: g    GET        9                   Read an object from the memo and push it on the stack.
+  418: \x8c SHORT_BINUNICODE '__getitem__' Push a Python Unicode string object.
+  431: \x86 TUPLE2                         Build a two-tuple out of the top two items on the stack.
+  432: R    REDUCE                         Push an object built from a callable and an argument tuple.
+  433: p    PUT        11                  Store the stack top into the memo.  The stack is not popped.
+  437: 0    POP                            Discard the top stack item, shrinking the stack by one item.
+  438: g    GET        0                   Read an object from the memo and push it on the stack.
+  441: \x8c SHORT_BINUNICODE 'builtins'    Push a Python Unicode string object.
+  451: \x8c SHORT_BINUNICODE 'int'         Push a Python Unicode string object.
+  456: \x93 STACK_GLOBAL                   Push a global object (module.attr) on the stack.
+  457: \x8c SHORT_BINUNICODE 'from_bytes'  Push a Python Unicode string object.
+  469: \x86 TUPLE2                         Build a two-tuple out of the top two items on the stack.
+  470: R    REDUCE                         Push an object built from a callable and an argument tuple.
+  471: p    PUT        12                  Store the stack top into the memo.  The stack is not popped.
+  475: 0    POP                            Discard the top stack item, shrinking the stack by one item.
+  476: M    BININT2    0                   Push a two-byte unsigned integer.
+  479: p    PUT        13                  Store the stack top into the memo.  The stack is not popped.
+  483: 0    POP                            Discard the top stack item, shrinking the stack by one item.
+  484: g    GET        10                  Read an object from the memo and push it on the stack.
+  488: g    GET        12                  Read an object from the memo and push it on the stack.
+  492: g    GET        6                   Read an object from the memo and push it on the stack.
+  495: \x8c SHORT_BINUNICODE 'builtins'    Push a Python Unicode string object.
+  505: \x8c SHORT_BINUNICODE 'slice'       Push a Python Unicode string object.
+  512: \x93 STACK_GLOBAL                   Push a global object (module.attr) on the stack.
+  513: g    GET        4                   Read an object from the memo and push it on the stack.
+  516: g    GET        13                  Read an object from the memo and push it on the stack.
+  520: M    BININT2    8                   Push a two-byte unsigned integer.
+  523: \x86 TUPLE2                         Build a two-tuple out of the top two items on the stack.
+  524: R    REDUCE                         Push an object built from a callable and an argument tuple.
+  525: g    GET        4                   Read an object from the memo and push it on the stack.
+  528: g    GET        3                   Read an object from the memo and push it on the stack.
+  531: g    GET        13                  Read an object from the memo and push it on the stack.
+  535: M    BININT2    1                   Push a two-byte unsigned integer.
+  538: \x86 TUPLE2                         Build a two-tuple out of the top two items on the stack.
+  539: R    REDUCE                         Push an object built from a callable and an argument tuple.
+  540: M    BININT2    8                   Push a two-byte unsigned integer.
+  543: \x86 TUPLE2                         Build a two-tuple out of the top two items on the stack.
+  544: R    REDUCE                         Push an object built from a callable and an argument tuple.
+  545: \x86 TUPLE2                         Build a two-tuple out of the top two items on the stack.
+  546: R    REDUCE                         Push an object built from a callable and an argument tuple.
+  547: \x85 TUPLE1                         Build a one-tuple out of the topmost item on the stack.
+  548: R    REDUCE                         Push an object built from a callable and an argument tuple.
+  549: \x8c SHORT_BINUNICODE 'little'      Push a Python Unicode string object.
+  557: \x86 TUPLE2                         Build a two-tuple out of the top two items on the stack.
+  558: R    REDUCE                         Push an object built from a callable and an argument tuple.
+  559: \x85 TUPLE1                         Build a one-tuple out of the topmost item on the stack.
+  560: R    REDUCE                         Push an object built from a callable and an argument tuple.
+  561: 0    POP                            Discard the top stack item, shrinking the stack by one item.
+  562: g    GET        2                   Read an object from the memo and push it on the stack.
+  565: g    GET        3                   Read an object from the memo and push it on the stack.
+  568: g    GET        4                   Read an object from the memo and push it on the stack.
+  571: g    GET        5                   Read an object from the memo and push it on the stack.
+  574: g    GET        3                   Read an object from the memo and push it on the stack.
+  577: g    GET        13                  Read an object from the memo and push it on the stack.
+  581: M    BININT2    1                   Push a two-byte unsigned integer.
+  584: \x86 TUPLE2                         Build a two-tuple out of the top two items on the stack.
+  585: R    REDUCE                         Push an object built from a callable and an argument tuple.
+  586: p    PUT        14                  Store the stack top into the memo.  The stack is not popped.
+  590: M    BININT2    8                   Push a two-byte unsigned integer.
+  593: \x86 TUPLE2                         Build a two-tuple out of the top two items on the stack.
+  594: R    REDUCE                         Push an object built from a callable and an argument tuple.
+  595: M    BININT2    119                 Push a two-byte unsigned integer.
+  598: \x86 TUPLE2                         Build a two-tuple out of the top two items on the stack.
+  599: R    REDUCE                         Push an object built from a callable and an argument tuple.
+  600: M    BININT2    457                 Push a two-byte unsigned integer.
+  603: \x86 TUPLE2                         Build a two-tuple out of the top two items on the stack.
+  604: R    REDUCE                         Push an object built from a callable and an argument tuple.
+  605: \x85 TUPLE1                         Build a one-tuple out of the topmost item on the stack.
+  606: R    REDUCE                         Push an object built from a callable and an argument tuple.
+  607: 0    POP                            Discard the top stack item, shrinking the stack by one item.
+  608: g    GET        0                   Read an object from the memo and push it on the stack.
+  611: ]    EMPTY_LIST                     Push an empty list.
+  612: p    PUT        15                  Store the stack top into the memo.  The stack is not popped.
+  616: \x8c SHORT_BINUNICODE 'append'      Push a Python Unicode string object.
+  624: \x86 TUPLE2                         Build a two-tuple out of the top two items on the stack.
+  625: R    REDUCE                         Push an object built from a callable and an argument tuple.
+  626: p    PUT        16                  Store the stack top into the memo.  The stack is not popped.
+  630: 0    POP                            Discard the top stack item, shrinking the stack by one item.
+  631: g    GET        0                   Read an object from the memo and push it on the stack.
+  634: g    GET        15                  Read an object from the memo and push it on the stack.
+  638: \x8c SHORT_BINUNICODE '__getitem__' Push a Python Unicode string object.
+  651: \x86 TUPLE2                         Build a two-tuple out of the top two items on the stack.
+  652: R    REDUCE                         Push an object built from a callable and an argument tuple.
+  653: p    PUT        17                  Store the stack top into the memo.  The stack is not popped.
+  657: 0    POP                            Discard the top stack item, shrinking the stack by one item.
+  658: g    GET        0                   Read an object from the memo and push it on the stack.
+  661: \x8c SHORT_BINUNICODE 'builtins'    Push a Python Unicode string object.
+  671: \x8c SHORT_BINUNICODE 'int'         Push a Python Unicode string object.
+  676: \x93 STACK_GLOBAL                   Push a global object (module.attr) on the stack.
+  677: \x8c SHORT_BINUNICODE '__xor__'     Push a Python Unicode string object.
+  686: \x86 TUPLE2                         Build a two-tuple out of the top two items on the stack.
+  687: R    REDUCE                         Push an object built from a callable and an argument tuple.
+  688: p    PUT        18                  Store the stack top into the memo.  The stack is not popped.
+  692: 0    POP                            Discard the top stack item, shrinking the stack by one item.
+  693: I    INT        1244422970072434993 Push an integer or bool.
+  714: p    PUT        19                  Store the stack top into the memo.  The stack is not popped.
+  718: 0    POP                            Discard the top stack item, shrinking the stack by one item.
+  719: M    BININT2    0                   Push a two-byte unsigned integer.
+  722: p    PUT        20                  Store the stack top into the memo.  The stack is not popped.
+  726: 0    POP                            Discard the top stack item, shrinking the stack by one item.
+  727: g    GET        16                  Read an object from the memo and push it on the stack.
+  731: \x8c SHORT_BINUNICODE 'builtins'    Push a Python Unicode string object.
+  741: \x8c SHORT_BINUNICODE 'pow'         Push a Python Unicode string object.
+  746: \x93 STACK_GLOBAL                   Push a global object (module.attr) on the stack.
+  747: g    GET        18                  Read an object from the memo and push it on the stack.
+  751: g    GET        11                  Read an object from the memo and push it on the stack.
+  755: g    GET        20                  Read an object from the memo and push it on the stack.
+  759: \x85 TUPLE1                         Build a one-tuple out of the topmost item on the stack.
+  760: R    REDUCE                         Push an object built from a callable and an argument tuple.
+  761: g    GET        19                  Read an object from the memo and push it on the stack.
+  765: \x86 TUPLE2                         Build a two-tuple out of the top two items on the stack.
+  766: R    REDUCE                         Push an object built from a callable and an argument tuple.
+  767: I    INT        65537               Push an integer or bool.
+  774: I    INT        18446744073709551557 Push an integer or bool.
+  796: \x87 TUPLE3                          Build a three-tuple out of the top three items on the stack.
+  797: R    REDUCE                          Push an object built from a callable and an argument tuple.
+  798: \x85 TUPLE1                          Build a one-tuple out of the topmost item on the stack.
+  799: R    REDUCE                          Push an object built from a callable and an argument tuple.
+  800: 0    POP                             Discard the top stack item, shrinking the stack by one item.
+  801: g    GET        17                   Read an object from the memo and push it on the stack.
+  805: g    GET        20                   Read an object from the memo and push it on the stack.
+  809: \x85 TUPLE1                          Build a one-tuple out of the topmost item on the stack.
+  810: R    REDUCE                          Push an object built from a callable and an argument tuple.
+  811: p    PUT        21                   Store the stack top into the memo.  The stack is not popped.
+  815: 0    POP                             Discard the top stack item, shrinking the stack by one item.
+  816: g    GET        2                    Read an object from the memo and push it on the stack.
+  819: g    GET        3                    Read an object from the memo and push it on the stack.
+  822: g    GET        4                    Read an object from the memo and push it on the stack.
+  825: g    GET        5                    Read an object from the memo and push it on the stack.
+  828: g    GET        3                    Read an object from the memo and push it on the stack.
+  831: g    GET        20                   Read an object from the memo and push it on the stack.
+  835: M    BININT2    1                    Push a two-byte unsigned integer.
+  838: \x86 TUPLE2                          Build a two-tuple out of the top two items on the stack.
+  839: R    REDUCE                          Push an object built from a callable and an argument tuple.
+  840: p    PUT        22                   Store the stack top into the memo.  The stack is not popped.
+  844: M    BININT2    8                    Push a two-byte unsigned integer.
+  847: \x86 TUPLE2                          Build a two-tuple out of the top two items on the stack.
+  848: R    REDUCE                          Push an object built from a callable and an argument tuple.
+  849: M    BININT2    131                  Push a two-byte unsigned integer.
+  852: \x86 TUPLE2                          Build a two-tuple out of the top two items on the stack.
+  853: R    REDUCE                          Push an object built from a callable and an argument tuple.
+  854: M    BININT2    679                  Push a two-byte unsigned integer.
+  857: \x86 TUPLE2                          Build a two-tuple out of the top two items on the stack.
+  858: R    REDUCE                          Push an object built from a callable and an argument tuple.
+  859: \x85 TUPLE1                          Build a one-tuple out of the topmost item on the stack.
+  860: R    REDUCE                          Push an object built from a callable and an argument tuple.
+  861: 0    POP                             Discard the top stack item, shrinking the stack by one item.
+  862: g    GET        0                    Read an object from the memo and push it on the stack.
+  865: g    GET        15                   Read an object from the memo and push it on the stack.
+  869: \x8c SHORT_BINUNICODE '__eq__'       Push a Python Unicode string object.
+  877: \x86 TUPLE2                          Build a two-tuple out of the top two items on the stack.
+  878: R    REDUCE                          Push an object built from a callable and an argument tuple.
+  879: (    MARK                            Push markobject onto the stack.
+  880: I        INT        8215359690687096682 Push an integer or bool.
+  901: I        INT        1862662588367509514 Push an integer or bool.
+  922: I        INT        8350772864914849965 Push an integer or bool.
+  943: I        INT        11616510986494699232 Push an integer or bool.
+  965: I        INT        3711648467207374797  Push an integer or bool.
+  986: I        INT        9722127090168848805  Push an integer or bool.
+ 1007: I        INT        16780197523811627561 Push an integer or bool.
+ 1029: I        INT        18138828537077112905 Push an integer or bool.
+ 1051: l        LIST       (MARK at 879)        Build a list out of the topmost stack slice, after markobject.
+ 1052: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+ 1053: R    REDUCE                              Push an object built from a callable and an argument tuple.
+ 1054: .    STOP                                Stop the unpickling machine.
+highest protocol among opcodes = 4
